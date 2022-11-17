@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Материалы</title>
+	</head>
+	
+	<script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('tc_button').onclick = function()
+            {
+                if(document.body.className != 'new_class')
+                {
+                    document.body.className = 'new_class';
+                }
+                else
+                {
+                    document.body.className = '';
+                }
+            }
+        }
+    </script>
+		
+    <style>
+        body { background: #FFFFFF; color: #000000; min-height: 100%; }
+        .new_class { background: #000000; color: #FFFFFF; }
+		
+		a.button {
+            display: inline-block;
+            font-family: lucida console;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(68,68,68);
+            text-decoration: none;
+            user-select: none;
+            padding: .2em 1.2em;
+            outline: none;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 2px;
+            background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+            transition: all .218s ease 0s;
+        }
+        a.button:hover {
+            color: rgb(24,24,24);
+            border: 1px solid rgb(198,198,198);
+            background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+            box-shadow: 0 1px 2px rgba(0,0,0,.1);
+        }
+        a.button:active {
+            color: rgb(51,51,51);
+            border: 1px solid rgb(204,204,204);
+            background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+            box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+        }
+    </style>
+	
+	<body>
+	    <button id="tc_button" name="tc_button">Сменить тему</button>
+	
+	    <font face="lucida console">
+		
+		<center><h1>Материалы</h1></center>
+		
+		<a href="logowr.docx" class="button">Полная документация</a>
+		<br><br>
+		<a href="Введение.docx" class="button">Введение</a>
+		<br><br>
+		<a href="Описание языка LogoWriter.docx" class="button">Описание языка LogoWriter</a>
+		<br><br>
+		<a href="Структура системы LogoWriter.docx" class="button">Структура системы LogoWriter</a>
+		<br><br>
+		<a href="Приложения.docx" class="button">Приложения</a>
+		<br><br>
+		<a href="Инструкция по нахождению файла вашей программы в LogoWriter.pdf" class="button">Инструкция по нахождению файла вашей программы в LogoWriter</a>
+		<br><br>
+		<a href="priwwst2223.doc" class="button">Произведение М * Н  и  возведение Х в степень Н</a>
+		<br><br>
+		<a href="sumdr2223.doc" class="button">Сумма дробей</a>
+		<br><br>
+		<a href="Faktisumf2223.doc" class="button">Факториал и сумма факториалов</a>
+		<br><br>
+		<a href="smiprch2223.doc" class="button">Введение в сумму и произведение счётчиков</a>
+		<br><br>
+		<a href="wwper2223.doc" class="button">Введение в переменную</a>
+	</body>
+</html>
